@@ -28,22 +28,33 @@
             <br>
                 <h3>Firmware</h3>
                 <pre>
+// In this section, I am using constants to name my pins so that I don't get confused.
+const int buttonPin = 2;     // Set pin 2 as buttonPin.
+const int redLED =  10;      // Set pin 10 as redLED.
+const int blueLED =  11;     // Set pin 11 as blueLED.
+
+// variables will change:
+int buttonState = 0;         // Variable for reading the pushbutton status.
+
 void setup() {
-pinMode(13, OUTPUT);       // initialize digital pin 13 as an output
-pinMode(12, OUTPUT);       // initialize digital pin 12 as an output
-pinMode(11, OUTPUT);       // initialize digital pin 11 as an output
+  pinMode(redLED, OUTPUT);       // Initialize the red LED pin as an output.
+   pinMode(blueLED, OUTPUT);      // Initialize the blue LED pin as an output.
+  pinMode(buttonPin, INPUT);     // Initialize the pushbutton pin as an input.
 }
 
-// the loop function runs over and over again forever
 void loop() {
-digitalWrite(13, HIGH);    // turn the red LED (pin 13) on by making the voltage HIGH
-digitalWrite(12, HIGH);    // turn the green LED (pin 12) on by making the voltage HIGH
-digitalWrite(11, HIGH);    // turn the blue LED (pin 11) on by making the voltage HIGH
-delay(500);                // wait for half a second
-digitalWrite(13, LOW);     // turn the red LED (pin 13) off by making the voltage LOW
-digitalWrite(12, LOW);     // turn the green LED (pin 12) off by making the voltage LOW
-digitalWrite(11, LOW);     // turn the blue LED (pin 11) off by making the voltage LOW
-delay(500);                // wait for half a second
+  buttonState = digitalRead(buttonPin);                   // Read the state of the pushbutton value.
+  if (buttonState == HIGH) {                              // Check if the pushbutton is pressed. If it is, the buttonState is HIGH.
+    for (int counter = 0; counter < 255; counter ++){     // For loop that starts at 0 and counts up by 1 up to 255 (for 8-bit color).
+      analogWrite(redLED, counter);                       // Set the brightness of the red LED with the value supplied by the for loop.
+      analogWrite(blueLED, counter);                      // Set the brightness of the blue LED with the value supplied by the for loop.
+      delay(5);                                           // Delay by 5 milliseconds.
+    }
+  } else {                                                // If the button is not pressed and the buttonState is LOW, execute this.
+      digitalWrite(redLED, HIGH);                         // Set the red LED to HIGH (maximum brightness).
+      digitalWrite(blueLED, HIGH);                        // Set the blue LED to HIGH (maximum brightness).
+      delay(5);                                           // Delay by 5 milliseconds.
+    }
 }
                 </pre>
                 <p>The coding was hard as well. I had to scale back. My original intention was to have the button fade in one LED, while fading out the other simultaneously; pressing it again would reverse the process. Jasper explained some of the things I needed to do and I realized I was pressed on time. I guess just fading in LEDs is cool too.</p>
