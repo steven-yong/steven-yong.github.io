@@ -22,7 +22,7 @@
             <p>
                 <h3>Circuit</h3>
                 <img src="IMG_1911.jpeg" width=400></a>
-                <p>Adding the extra layer of the button, I was confused for awhile this week. A lightbulb went off when I learned that the LEDs connect to the Arduino and not the button somehow.</p>
+                <p>Adding the extra layer of the button, I was confused for awhile this week. A lightbulb went off when I learned that the LEDs connect to the Arduino and not the button somehow. Pin 2 basically serves as a input into the Arduino, which can detect when the button is pressed/the circuit is completed. The red LED is connected to pin 10 and the blue LED to pin 11 as outputs; the pins were chosen because they are able to output as analogWrite.</p>
             </p>
             <p>
             <br>
@@ -38,7 +38,7 @@ int buttonState = 0;         // Variable for reading the pushbutton status.
 
 void setup() {
   pinMode(redLED, OUTPUT);       // Initialize the red LED pin as an output.
-   pinMode(blueLED, OUTPUT);      // Initialize the blue LED pin as an output.
+  pinMode(blueLED, OUTPUT);      // Initialize the blue LED pin as an output.
   pinMode(buttonPin, INPUT);     // Initialize the pushbutton pin as an input.
 }
 
