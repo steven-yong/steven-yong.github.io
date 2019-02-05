@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Steven Yong's HCDE 439 Physical Computing Page!</title>
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    </head>
+		<body>
+			<div class="header">
+            <h1>Steven Yong's Assignment 4!</h1>
+            <p>
+                <h3>Schematic</h3>
+                <img src="IMG_2037.jpeg" width=400></a>
+                <img src="A4_Schematic.pdf" width=400></a>
+                <p>I only calculated the values for the minimum resistance of the photoresistor because that is when it could pose a danger to my Arduino microcontroller. The calculations confirm that using a 10K Ohm resistor is safe. My calculations for the LED strip showed that without any resistors it would fry my Arduino to oblivion, so I calculated the current using a 10K Ohm resistor and it pushes it into safe territory. The volts is also safe since the maximum for the Arduino Uno R3 is exactly 12. This week I was initially overwhelmed with the math of the LED strip, but taking it one step at a time I think I was able to work through it correctly with the help of Google. Snow got in the way of office hours this week, so hopefully Jasper or Kartika can answer two questions I had about this the next time I see them.</p>
+            </p>
+            <br>
+            <p>
+                <h3>Circuit</h3>
+                <img src="IMG_1911.jpeg" width=400></a>
+                <p></p>
+            </p>
+            <p>
+            <br>
+                <h3>Firmware</h3>
+                <pre>
+const int photoresistorPin = A0;        //Give pin A0 the name photoresistorPin.
+const int ledstripPin = 3;              //Give pin 3 the name ledstripPin. 
+
+void setup() {
+  pinMode(photoresistorPin, INPUT);     //Initialize the photoresistorPin as an input.
+  pinMode(ledstripPin, OUTPUT);         //Initialize the ledstripPin as an output.
+  Serial.begin(9600);                   //Set the baud rate to 9600.
+}
+
+int photoresistorValue = 0;             //Create a new integer variable and give it the name photoresistorValue.
+int processedValue = 0;                 //Create a new integer variable and give it the name processedValue.
+
+void loop() {
+  photoresistorValue = analogRead(photoresistorPin);                //Read the value from the photoresistorPin and assign the value to photoresistorValue.
+  processedValue = map(photoresistorValue, 0, 1023, 0, 255);        //Use the map function to convert the values from the photoresistor to 8-bit RGB.
+  Serial.print("The photoresistor value is: ");                     //Print this in the serial monitor.
+  Serial.print(photoresistorValue);                                 //Print the photoresistorValue in the serial monitor.
+  Serial.print("\t The processed value is: ");                      //Print this in the serial monitor.
+  Serial.println(processedValue);                                   //Print the processedValue in the serial monitor.
+
+  if (processedValue > 150) {                                       //If the processValue is greater than 150, execute the following.
+    for (int fadeValue = 0; fadeValue < 255; fadeValue++) {         //Start a for loop starting at 0, ending at 255, and increasing in an increment of one.
+      analogWrite(ledstripPin, fadeValue);                          //Assign the value from the for loop to the ledstripPin.
+      delay(5);                                                     //Delay by 5 milliseconds.
+    }
+  }
+  else {                                                            //For all other cases, execute the following.
+    digitalWrite(ledstripPin, LOW);                                 //Set the ledstripPin to low (off).
+  }
+}
+                </pre>
+                <p>The coding was pretty quick this week since it's last week's code, but simpler since I'm not using an RGB.</p>
+            </p>
+            <br>
+            <p>
+                <h3>Circuit's Operation</h3>
+                <img src="IMG_1914.gif" width=400></a>
+                <p></p>
+            </p>
+            <br>
+        </div>
+    </body>
+</html>
