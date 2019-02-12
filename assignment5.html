@@ -43,6 +43,8 @@ void setup() {
 void loop() {
   xval = analogRead(x);                       //Read the values coming in from the joystick at pin A0 (x-axis).
   yval = analogRead(y);                       //Read the values coming in from the joystick at pin A1 (y-axis).
+  convertedx = map(xval, 0, 1000, 0, 90);     //Use the map function to convert the x-values of the joystick to the 90 degree angle of the servo motor.
+  
   
   Serial.print("x = ");                       //Print this in the serial monitor.
   Serial.println(xval);                       //Print the x-value in the serial monitor, then create a new line.
@@ -52,7 +54,6 @@ void loop() {
   Serial.println(convertedx);                 //Print the converted x-value in the serial monitor.
   Serial.println();                           //Create a new line.
 
-  convertedx = map(xval, 0, 1000, 0, 90);     //Use the map function to convert the x-values of the joystick to the 90 degree angle of the servo motor.
   myServo.write(convertedx);                  //Give the servo motor the new converted x-value.
   delay(15);                                  //Delay by 15 milliseconds.
 }
