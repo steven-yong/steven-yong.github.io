@@ -124,7 +124,7 @@ p {
 }
 
 .flex-parent.margins {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .flex-parent.bottom-margins {
@@ -260,6 +260,8 @@ p {
 .grid-lightbox {
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
 }
 
 .bottom-margin {
@@ -375,6 +377,9 @@ p {
   }
   .flex-child-1 {
     width: auto;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
   }
   .flex-child-2 {
     width: 100%;
@@ -394,8 +399,11 @@ p {
     column-count: 1;
   }
   .persona-journey-grid {
+    grid-auto-flow: row;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
   }
   .storyboard-grid {
     -ms-grid-columns: 1fr;
@@ -404,6 +412,10 @@ p {
   .grid-lightbox {
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .grid-6 {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .affinity-grid {
     -ms-grid-columns: 1fr;
@@ -416,6 +428,8 @@ p {
   .image-margin {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
   }
   .case-study-grid {
     -ms-grid-columns: 1fr;
@@ -510,6 +524,35 @@ p {
     grid-column-end: span 2;
     -ms-grid-column-align: center;
     justify-self: center;
+  }
+}
+
+@media (max-width: 767px) {
+  #w-node-d310b2e580bb-c5b60861 {
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
+  }
+  #w-node-89f23735acb3-c5b60861 {
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
+  }
+  #w-node-5b7e3e412303-c5b60861 {
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
   }
 }
 
