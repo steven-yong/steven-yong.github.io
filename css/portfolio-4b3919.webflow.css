@@ -964,6 +964,12 @@ p {
   border-radius: 20px;
 }
 
+.paragraph-34 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
 @media (max-width: 991px) {
   .landing-header {
     margin-top: 40px;
