@@ -33,23 +33,24 @@ p {
 }
 
 .body {
-  border-radius: 20px;
+  background-color: #000;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .subtitle {
   display: block;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  color: #000;
-  font-weight: 700;
+  font-family: Quicksand, sans-serif;
+  color: #707070;
+  font-weight: 500;
 }
 
 .title {
   display: block;
   margin: 10% auto 5%;
-  color: #000;
+  font-family: Quicksand, sans-serif;
+  color: #fff;
   line-height: 1.5em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .container {
@@ -60,20 +61,28 @@ p {
 
 .paragraph {
   border: 1px none #000;
-  font-family: Quicksand;
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
 }
 
 .paragraph.bottom-margin {
   margin-bottom: 30px;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  color: #000;
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
 }
 
 .bold {
   margin-bottom: 5px;
   border: 1px none #000;
-  color: #686868;
-  font-weight: 400;
+  font-family: Quicksand, sans-serif;
+  color: #707070;
+  font-weight: 500;
+}
+
+.landing-image {
+  border-radius: 20px;
 }
 
 .columns {
@@ -83,6 +92,8 @@ p {
 }
 
 .text-block {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
   font-size: 12px;
 }
 
@@ -127,10 +138,6 @@ p {
   margin-bottom: 30px;
 }
 
-.flex-parent.bottom-margins {
-  margin-bottom: 20px;
-}
-
 .flex-child-1 {
   width: 75%;
 }
@@ -146,13 +153,17 @@ p {
 
 .tag {
   margin-bottom: 5px;
-  color: #686868;
-  font-weight: 400;
+  font-family: Quicksand, sans-serif;
+  color: #707070;
+  font-weight: 500;
 }
 
 .hook {
   margin-top: 0px;
   margin-bottom: 20px;
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 500;
 }
 
 .section-1 {
@@ -234,27 +245,38 @@ p {
 
 .image-6 {
   margin-top: 40px;
+  border-radius: 20px;
 }
 
 .image-7 {
   margin-top: 40px;
+  border-radius: 20px;
 }
 
 .image-8 {
   margin-top: 40px;
+  border-radius: 20px;
 }
 
 .image-9 {
   margin-top: 40px;
+  border-radius: 20px;
 }
 
 .paragraph-2 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
   -webkit-column-count: 2;
   column-count: 2;
 }
 
 .section-12 {
   margin-bottom: 100px;
+}
+
+.image-10 {
+  border-radius: 20px;
 }
 
 .grid-lightbox {
@@ -288,6 +310,9 @@ p {
 
 .list-2 {
   margin-bottom: 20px;
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
 }
 
 .grid-7 {
@@ -304,6 +329,7 @@ p {
   margin-bottom: 20px;
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
+  border-radius: 20px;
 }
 
 .paragraph-3 {
@@ -312,7 +338,19 @@ p {
 
 .paragraph-3.bottom-margin {
   margin-bottom: 30px;
-  color: #000;
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.landing-header {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 500;
+}
+
+.image-12 {
+  border-radius: 20px;
 }
 
 .landing-section {
@@ -331,11 +369,599 @@ p {
   grid-template-rows: auto;
 }
 
+.case-study-image {
+  border-radius: 20px;
+}
+
 .landing-grid {
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+}
+
+.paragraph-4 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-5 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-6 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-7 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-8 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-9 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-10 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-11 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-12 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-13 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-14 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-15 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-16 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-17 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-18 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-19 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-20 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-21 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-22 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.list-3 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.list-4 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-23 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-24 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.list-5 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-25 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.image-13 {
+  border-radius: 20px;
+}
+
+.image-14 {
+  border-radius: 20px;
+}
+
+.image-15 {
+  border-radius: 20px;
+}
+
+.image-16 {
+  border-radius: 20px;
+}
+
+.image-17 {
+  border-radius: 20px;
+}
+
+.image-18 {
+  border-radius: 20px;
+}
+
+.image-19 {
+  border-radius: 20px;
+}
+
+.image-20 {
+  border-radius: 20px;
+}
+
+.image-21 {
+  border-radius: 20px;
+}
+
+.image-22 {
+  border-radius: 20px;
+}
+
+.image-23 {
+  border-radius: 20px;
+}
+
+.image-24 {
+  border-radius: 20px;
+}
+
+.image-25 {
+  border-radius: 20px;
+}
+
+.image-26 {
+  border-radius: 20px;
+}
+
+.image-27 {
+  border-radius: 20px;
+}
+
+.image-28 {
+  border-radius: 20px;
+}
+
+.image-29 {
+  border-radius: 20px;
+}
+
+.image-30 {
+  border-radius: 20px;
+}
+
+.image-31 {
+  border-radius: 20px;
+}
+
+.image-32 {
+  border-radius: 20px;
+}
+
+.image-33 {
+  border-radius: 20px;
+}
+
+.image-34 {
+  border-radius: 20px;
+}
+
+.image-35 {
+  border-radius: 20px;
+}
+
+.image-36 {
+  border-radius: 20px;
+}
+
+.image-37 {
+  border-radius: 20px;
+}
+
+.image-38 {
+  border-radius: 20px;
+}
+
+.image-39 {
+  border-radius: 20px;
+}
+
+.image-40 {
+  border-radius: 20px;
+}
+
+.image-41 {
+  border-radius: 20px;
+}
+
+.image-42 {
+  border-radius: 20px;
+}
+
+.image-43 {
+  border-radius: 20px;
+}
+
+.image-44 {
+  border-radius: 20px;
+}
+
+.image-45 {
+  border-radius: 20px;
+}
+
+.image-46 {
+  border-radius: 20px;
+}
+
+.image-47 {
+  border-radius: 20px;
+}
+
+.image-48 {
+  border-radius: 20px;
+}
+
+.image-49 {
+  border-radius: 20px;
+}
+
+.image-50 {
+  border-radius: 20px;
+}
+
+.image-51 {
+  border-radius: 20px;
+}
+
+.image-52 {
+  border-radius: 20px;
+}
+
+.image-53 {
+  border-radius: 20px;
+}
+
+.image-54 {
+  border-radius: 20px;
+}
+
+.image-55 {
+  border-radius: 20px;
+}
+
+.image-56 {
+  border-radius: 20px;
+}
+
+.image-57 {
+  border-radius: 20px;
+}
+
+.image-58 {
+  border-radius: 20px;
+}
+
+.image-59 {
+  border-radius: 20px;
+}
+
+.image-60 {
+  border-radius: 20px;
+}
+
+.image-61 {
+  border-radius: 20px;
+}
+
+.image-62 {
+  border-radius: 20px;
+}
+
+.paragraph-26 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.image-63 {
+  border-radius: 20px;
+}
+
+.image-64 {
+  border-radius: 20px;
+}
+
+.image-65 {
+  border-radius: 20px;
+}
+
+.image-66 {
+  border-radius: 20px;
+}
+
+.image-67 {
+  border-radius: 20px;
+}
+
+.image-68 {
+  border-radius: 20px;
+}
+
+.image-69 {
+  border-radius: 20px;
+}
+
+.image-70 {
+  border-radius: 20px;
+}
+
+.image-71 {
+  border-radius: 20px;
+}
+
+.image-72 {
+  border-radius: 20px;
+}
+
+.image-73 {
+  border-radius: 20px;
+}
+
+.image-74 {
+  border-radius: 20px;
+}
+
+.image-75 {
+  border-radius: 20px;
+}
+
+.image-76 {
+  border-radius: 20px;
+}
+
+.image-77 {
+  border-radius: 20px;
+}
+
+.image-78 {
+  border-radius: 20px;
+}
+
+.list-6 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-27 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.list-7 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-28 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.list-8 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-29 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-30 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.list-9 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-31 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-32 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.list-10 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.paragraph-33 {
+  font-family: Quicksand, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.image-79 {
+  border-radius: 20px;
+}
+
+.image-80 {
+  border-radius: 20px;
+}
+
+.image-81 {
+  border-radius: 20px;
+}
+
+.image-82 {
+  border-radius: 20px;
+}
+
+.image-83 {
+  border-radius: 20px;
+}
+
+.image-84 {
+  border-radius: 20px;
+}
+
+.image-85 {
+  border-radius: 20px;
+}
+
+.image-86 {
+  border-radius: 20px;
+}
+
+.image-87 {
+  border-radius: 20px;
+}
+
+.image-88 {
+  border-radius: 20px;
+}
+
+.image-89 {
+  border-radius: 20px;
+}
+
+.image-90 {
+  border-radius: 20px;
+}
+
+.image-91 {
+  border-radius: 20px;
+}
+
+.image-92 {
+  border-radius: 20px;
+}
+
+.image-93 {
+  border-radius: 20px;
+}
+
+.image-94 {
+  border-radius: 20px;
+}
+
+.image-95 {
+  border-radius: 20px;
+}
+
+.image-96 {
+  border-radius: 20px;
+}
+
+.image-97 {
+  border-radius: 20px;
+}
+
+.image-98 {
+  border-radius: 20px;
+}
+
+.image-99 {
+  border-radius: 20px;
+}
+
+.image-100 {
+  border-radius: 20px;
+}
+
+.image-101 {
+  border-radius: 20px;
 }
 
 @media (max-width: 991px) {
